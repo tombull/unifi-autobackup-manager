@@ -1,6 +1,6 @@
 FROM python:alpine
 WORKDIR /app
-COPY reset-all.py .
+COPY manage-autobackups.py .
 RUN pip install --no-cache-dir python-dateutil pytz
 ENV BACKUP_FOLDER=/var/lib/unifi/backup/autobackup \
     MONTHS_TO_KEEP_OF_WEEKLY=1 \
