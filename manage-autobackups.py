@@ -145,7 +145,7 @@ for backup_file in files_to_delete:
     print("Deleting file: " + backup_file)
     os.remove(backup_file)
 
-print("Writing new meta.json")
+print("Writing new meta.json:")
 print(json.dumps(new_meta, ensure_ascii=False, indent=4))
 
 with open(meta_json_file, "w", encoding="utf-8") as meta_json:

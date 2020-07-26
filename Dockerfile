@@ -7,4 +7,4 @@ ENV BACKUP_FOLDER=/var/lib/unifi/backup/autobackup \
     WEEKS_TO_KEEP_OF_DAILY=1 \
     YEARS_TO_KEEP_OF_MONTHLY=0 \
     TIMEZONE=Europe/London
-CMD python ./manage-autobackups.py --backupfolder ${BACKUP_FOLDER}} --monthstokeep ${MONTHS_TO_KEEP_OF_WEEKLY}} --weekstokeep ${WEEKS_TO_KEEP_OF_DAILY}} --yearstokeep ${YEARS_TO_KEEP_OF_MONTHLY}} --timezone ${TIMEZONE}
+CMD python ./manage-autobackups.py --backupfolder ${BACKUP_FOLDER} --monthstokeep ${MONTHS_TO_KEEP_OF_WEEKLY} --weekstokeep ${WEEKS_TO_KEEP_OF_DAILY} --yearstokeep ${YEARS_TO_KEEP_OF_MONTHLY} --timezone ${TIMEZONE}
